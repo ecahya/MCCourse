@@ -80,9 +80,9 @@ public class ModItems {
         private final  Ingredient repariMaterial;
         private final String name;
         private final float toughness;
-        private final float knockBackResistance;
+        private final float knockbackResistance;
 
-        ModArmorMaterial(int durability, int[] damageReductionAmountArray, int enchantability, SoundEvent soundEvent, Ingredient repariMaterial, String name, float toughness, float knockBackResistance) {
+        ModArmorMaterial(int durability, int[] damageReductionAmountArray, int enchantability, SoundEvent soundEvent, Ingredient repariMaterial, String name, float toughness, float knockbackResistance) {
             this.durability = durability;
             this.damageReductionAmountArray = damageReductionAmountArray;
             this.enchantability = enchantability;
@@ -90,7 +90,7 @@ public class ModItems {
             this.repariMaterial = repariMaterial;
             this.name = name;
             this.toughness = toughness;
-            this.knockBackResistance = knockBackResistance;
+            this.knockbackResistance = knockbackResistance;
         }
 
         @Override
@@ -129,8 +129,8 @@ public class ModItems {
         }
 
         @Override
-        public float func_230304_f_() { //knockback resistance
-            return knockBackResistance;
+        public float getKnockbackResistance() { //knockback resistance
+            return knockbackResistance;
         }
     }
 
