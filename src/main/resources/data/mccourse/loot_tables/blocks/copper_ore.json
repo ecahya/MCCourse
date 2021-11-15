@@ -1,16 +1,33 @@
 {
   "type": "minecraft:block",
-  "pools":
+  "pools": [
+    {
+      "rolls": 1,
+      "entries":
+      [
+        {
+          "type": "minecraft:item",
+          "functions":
           [
             {
-              "rolls": 1,
-              "entries":
-                      [
-                        {
-                          "type": "minecraft:item",
-                          "name": "mccourse:copper_ore"
-                        }
-                      ]
+              "function": "minecraft:set_count",
+              "count":
+              {
+                "min": 2.0,
+                "max": 5.0,
+                "type": "minecraft:uniform"
+              }
             }
-          ]
+          ],
+          "name": "mccourse:copper_ore",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "mccourse:copper_ingot",
+          "weight": 80
+        }
+      ]
+    }
+  ]
 }
