@@ -2,6 +2,7 @@ package com.silverleaf.mccourse.item;
 
 import com.silverleaf.mccourse.MCCourseMod;
 import com.silverleaf.mccourse.block.ModBlocks;
+import com.silverleaf.mccourse.block.ModFluids;
 import com.silverleaf.mccourse.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -73,6 +74,12 @@ public class ModItems {
     public static final RegistryObject<Item> ZUCCINI_SEED = Registration.ITEMS.register("zuccini_seed",
             () -> new BlockItem(ModBlocks.ZUCCINI_CROP.get(),
                     new Item.Properties().group(MCCourseMod.COURSE_TAB)));
+
+
+    //==========================F L U I D S==============================
+    public static final RegistryObject<Item> OIL_BUCKET = Registration.ITEMS.register("oil_bucket",
+            () -> new BucketItem(ModFluids.OIL_FLUID::get, new Item.Properties().group(MCCourseMod.COURSE_TAB).maxStackSize(1)));
+
 
     public static void register() {};
 

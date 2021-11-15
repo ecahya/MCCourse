@@ -1,6 +1,7 @@
 package com.silverleaf.mccourse;
 
 import com.silverleaf.mccourse.block.ModBlocks;
+import com.silverleaf.mccourse.block.ModFluids;
 import com.silverleaf.mccourse.events.ModEvents;
 import com.silverleaf.mccourse.item.ModItems;
 import com.silverleaf.mccourse.util.Config;
@@ -53,6 +54,7 @@ public class MCCourseMod
         Registration.register();
         ModItems.register();
         ModBlocks.register();
+        ModFluids.register();
 
         MinecraftForge.EVENT_BUS.register(new ModEvents());
 
