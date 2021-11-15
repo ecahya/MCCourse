@@ -1,6 +1,7 @@
 package com.silverleaf.mccourse.item;
 
 import com.silverleaf.mccourse.MCCourseMod;
+import com.silverleaf.mccourse.block.ModBlocks;
 import com.silverleaf.mccourse.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -67,6 +68,11 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.FEET,
                     new Item.Properties().group(MCCourseMod.COURSE_TAB)));
 
+
+    //==========================C R O P S==============================
+    public static final RegistryObject<Item> ZUCCINI_SEED = Registration.ITEMS.register("zuccini_seed",
+            () -> new BlockItem(ModBlocks.ZUCCINI_CROP.get(),
+                    new Item.Properties().group(MCCourseMod.COURSE_TAB)));
 
     public static void register() {};
 
